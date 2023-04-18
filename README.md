@@ -53,5 +53,5 @@ The `.yaml` files in the root directory are to specify the kubernetes manifests 
 ## Bringing it all together
 Once all the microservices are up and running,
 1. Inside the flask-app pod, a python script is written and run to insert records into the mongodb database. Insert into: database = 'blog' and collection = 'posts'.
-2. app.py` is run inside the pod. Visit `http://localhost:<port>/` to view the Blog App. The Home Page should display the records inserted into the database in the previous step.
+2. `app.py` is run inside the pod. Visit `http://localhost:<port>/` to view the Blog App. The Home Page should display the records inserted into the database in the previous step.
 3. You can view the database frontend exposed by mongo-express. To do so, on your browser, navigate to`EXTERNAL_IP:port` exposed by the mongo-express service. 
